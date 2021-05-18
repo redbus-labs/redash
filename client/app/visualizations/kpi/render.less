@@ -1,0 +1,46 @@
+.kpi-visualization-container {
+  display: block;
+  text-align: center;
+  padding: 15px 10px;
+  overflow: hidden;
+
+  .kpi-visualization-content {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    line-height: normal;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .kpi-visualization-value {
+      font-size: 1em;
+      display: block;
+    }
+
+    .kpi-visualization-target,
+    .kpi-visualization-delta {
+      font-size: 0.4em;
+      display: block;
+    }
+
+    .kpi-visualization-label {
+      font-size: 0.5em;
+      display: block;
+    }
+
+    .kpi-visualization-target {
+      color: #ccc;
+    }
+  }
+
+  &.trend-positive .kpi-visualization-delta {
+    color: #5cb85c;
+  }
+
+  &.trend-negative .kpi-visualization-delta {
+    color: #d9534f;
+  }
+}
