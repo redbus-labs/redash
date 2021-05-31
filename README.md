@@ -46,3 +46,16 @@ Please email security@redash.io to report any security vulnerabilities. We will 
 ## License
 
 BSD-2-Clause.
+
+## Setup
+git clone https://github.com/redbus-labs/redash
+cd redash/
+docker-compose build
+docker-compose up -d
+npm install
+docker-compose run --rm server create_db
+Please check if docker process is running by using
+docker ps -a
+once redash is running, please check http://localhost:5000/
+
+
