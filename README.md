@@ -20,6 +20,22 @@ Today **_Redash_** has support for querying multiple databases, including: Redsh
 
 <img src="https://raw.githubusercontent.com/getredash/website/8e820cd02c73a8ddf4f946a9d293c54fd3fb08b9/website/_assets/images/redash-anim.gif" width="80%"/>
 
+We **_redBus_**, the largest ticket selling system in the world, sells millions of bus tickets in a month and every minute redBus customers are seeing 150k+ buses .
+ 
+redBus is managing more than million inventories/buses in a day. Many bus operators are depending on redBus to sell their bus tickets. So it is really important to make our platforms run always. 
+
+We are using **_Redash_** as the primary tool for all our internal reporting systems.
+
+Though **_Redash_** supports authorization by data sources and groups which means we can restrict reports access by not adding the particular resource in the group. But currently there is no way to restrict individual reports on specific resources(you can do so by creating multiple groups on the same report, but it is not the optimal way to do so).
+
+This project, we customized authorization to restrict individual reports by tags
+
+Basically tag based restriction helps us not to allow reports if he/she does not belong to a particular group.
+
+Added the following entry {"allowed_tags": ["tag_name"], "restricting_parameters": {"email": ["currentUser.email"]}} in the details column of groups table in postgres.
+ 
+Also we fixed a few build issues in the current public redash repository.
+
 ## Getting Started
 
 * [Setting up Redash instance](https://redash.io/help/open-source/setup) (includes links to ready made AWS/GCE images).
@@ -57,4 +73,4 @@ BSD-2-Clause.
 * Please check if docker process is running by using docker ps -a
 * once redash is running, please check http://localhost:5000/
 
-
+Special thanks to Ratakonda & Sunny(go-mmt team) for the tag based authentication idea and flow.
