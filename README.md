@@ -73,4 +73,5 @@ BSD-2-Clause.
 * Please check if docker process is running by using docker ps -a
 * once redash is running, please check http://localhost:5000/
 
-Special thanks to Ratakonda & Sunny(go-mmt team) for the tag based authentication idea and flow.
+## Credits
+Special thanks to [Sunny Shah](https://github.com/ShahSunny), [Vivek Ratakonda](https://github.com/vivekr-bi), and [Surabhi Vats](https://github.com/vatssur) for the tag based authentication idea and flow.
