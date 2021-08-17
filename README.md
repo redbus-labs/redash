@@ -74,4 +74,4 @@ BSD-2-Clause.
 * once redash is running, please check http://localhost:5000/
 
 ## Credits
-Special thanks to [Sunny Shah](https://github.com/ShahSunny), [Vivek Ratakonda](https://github.com/vivekr-bi), and [Surabhi Vats](https://github.com/vatssur) for the tag based authentication idea and flow.
+Special thanks to [Sunny Shah](https://github.com/ShahSunny), [Vivek Ratakonda](https://github.com/vivekr-bi), and [Surabhi Vatsa](https://github.com/vatssur) for the tag based authentication idea and flow.
